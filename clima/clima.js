@@ -1,7 +1,7 @@
 
 
 const axios = require('axios')
-const apiKey = '9fce052f1c94ddaa654bf468af982858'
+
 const kelvinToGrados = (gradosEnKelvin)=> {
     
     const aRestar = 273.15
@@ -9,7 +9,7 @@ const kelvinToGrados = (gradosEnKelvin)=> {
     }
 
 const respWeather = async (latitud, longitud) =>{
-    const apiKey = '9fce052f1c94ddaa654bf468af982858'
+    const apiKey = 'Your_Api_Key'
 
     const resp = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${apiKey}`)
   
